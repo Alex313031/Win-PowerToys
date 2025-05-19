@@ -1203,7 +1203,7 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
         public void AddFirewallRule()
         {
             var param = string.Empty;
-            if (Settings.Properties.SameSubnetOnly)
+            if (SameSubnetOnly)
             {
                 param += "-samesubnetonly";
             }
